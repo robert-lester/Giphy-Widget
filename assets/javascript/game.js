@@ -6,7 +6,7 @@ $(document).ready(function(){
         var dataAnimal = $(this).attr("data-animal");
         var random = Math.floor(Math.random() * (100 - 2)) + 2;
 
-        var queryURL = "http://api.giphy.com/v1/gifs/search?q=" +
+        var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
             dataAnimal + "&api_key=dc6zaTOxFJmzC" + "&offset=" + random;
 
         $.ajax({
