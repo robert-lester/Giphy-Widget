@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Title</title>
+    <title>Giphy Generator</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
 </head>
@@ -12,32 +12,38 @@
 
 <div class="container">
 
+  <!--The title of the page-->
   <div class="row">
-    <div class="col-md-12">
+    <div class="col-md-12 text-center">
       <div class="jumbotron">
         <h1>Giphy Generator</h1>
       </div>
     </div>
   </div>
 
+  <!--The buttons display here-->
   <div class="row">
     <div class="col-md-12">
-      <div id="newAnimal"></div>
+      <div id="newGif"></div>
     </div>
   </div>
 
+  <!--The empty text field and the submit button display here-->
   <div class="row">
-    <div class="col-md-12">
+    <div class="col-md-4"></div>
+    <div class="col-md-4 text-center">
       <form>
         <div class="form-group">
-          <label for="userInput">Add an theme!</label>
+          <label for="userInput">Add a theme!</label>
           <input type="text" class="form-control" id="userInput">
         </div>
-        <button id="add-animal" type="submit" class="btn btn-default">Submit</button>
+        <button id="add-gif" type="submit" class="btn btn-warning">Submit</button>
       </form>
     </div>
+    <div class="col-md-4"></div>
   </div>
 
+  <!--The gif images display here when the theme button is clicked-->
   <div class="row">
     <div class="col-md-12">
       <div id="gifs-appear-here"></div>
