@@ -96,6 +96,15 @@ $(document).ready(function(){
         }
     });
 
+    $("#clear-gif").on("click", function(event) {
+
+        //prevents the screen from reloading when pressing the submit button
+        event.preventDefault();
+
+        $("#gifs-appear-here").empty();
+
+    })
+
     //allow all buttons to be clickable if they have the class of gifformat and then run the function of displayGifInfo
     $(document).on("click", ".gifFormat", displayGifInfo);
 
